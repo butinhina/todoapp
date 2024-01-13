@@ -1,5 +1,15 @@
+
+
 package com.todo.mapper;
 
-public interface TodoMapper {
+import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
+
+import com.todo.entity.Todo;
+
+@Mapper
+public interface TodoMapper {
+	//DBを操作するメソッド
+	public List<Todo> selectAll();
 }
