@@ -1,5 +1,3 @@
-
-
 package com.todo.mapper;
 
 import java.util.List;
@@ -12,4 +10,14 @@ import com.todo.entity.Todo;
 public interface TodoMapper {
 	//DBを操作するメソッド
 	public List<Todo> selectAll();
+	
+	public List<Todo> selectIncomplete();
+	
+	public List<Todo> selectComplete();
+	
+	public void add(Todo todo);
+	
+	public void update(Todo todo);
+	        
+	public void delete();
 }
